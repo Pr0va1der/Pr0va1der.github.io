@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Speedometer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
 </head>
 <body>
 <div class="imageDiv">
@@ -12,6 +12,7 @@
     <div class="meterImageDiv">
         <img src="image/meter.png" alt="meter" id="meterImage" class="ImageClass" v-bind:style="{transform: 'rotate(' + rotateDeg + 'deg)'}">
         <input type="text" v-model="rotateDeg">
+        <p>123</p>
     </div>
 
     <script src="script.js"></script>
