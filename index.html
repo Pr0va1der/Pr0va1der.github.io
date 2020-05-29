@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <title>Speedometer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    <div class="imageDiv">
-        <img src="image/speed.png" alt="speed" id="speedImage" class="ImageClass">
-        <img src="image/meter.png" alt="meter" id="meterImage" class="ImageClass">
+<div class="imageDiv">
+    <img src="image/speed.png" alt="speed" id="speedImage" class="ImageClass">
+    <div class="meterImageDiv">
+        <img src="image/meter.png" alt="meter" id="meterImage" class="ImageClass" v-bind:style="{transform: 'rotate(' + rotateDeg + 'deg)'}">
     </div>
+
+    <script src="script.js"></script>
+</div>
 </body>
 </html>
